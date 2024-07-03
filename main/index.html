@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betting App</title>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script type="module" src="../js/index.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <form id="data-form">
+        <div class="dropdown-container">
+          <select id="league-dropdown" required>
+            <option value="0" selected>League</option>
+            <option value="140" >La Liga</option>
+            <option value="39">Premier League</option>
+            <option value="135">Serie A</option>
+            <option value="113">Allsvenskan</option>
+            <option value="78">Bundesliga</option>
+            <option value="61">Ligue 1</option>
+            <option value="2">Champions League</option>
+            <option value="4">Euros</option>
+          </select>
+
+          <select id="team-dropdown">
+            <option value="541">Real Madrid</option>
+            <option value="543">Real Betis</option>
+            <option value="33">Mancheste United</option>
+            <option value="34">Newcastle</option>
+          </select>
+
+          <input type="submit" value="Submit" class="btn-submit"/>
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <div class="team-names-and-icon">
+        <span class="name-and-icon" id="home-team-name-header">X Home Team</span>
+        <span class="name-and-icon" id="away-team-name-header">Away Team X</span>
+      </div>
+
+      <section class="team-stats-container">
+        <div class="team-stats home-team-stats">
+          <div class="team-data">
+            <div class="item1">
+              <div class="past-fixtures-container" id="past-fixtures-container-home">
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <canvas id="goals-line-chart"></canvas>
+            </div>
+            <div class="item3">
+              <canvas id="goals-bar-chart"></canvas>
+            </div>
+            <div class="item4">
+                <p class="pie-chart-description">Total</p>
+                <canvas id="goals-pie-chart"></canvas>
+                
+                <p class="pie-chart-description">Home</p>
+                <canvas id="goals-pie-chart-2"></canvas>
+
+                <p class="pie-chart-description">Away</p>
+                <canvas id="goals-pie-chart-3"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-stats away-team-stats">
+          <div class="team-data">
+            <div class="item1">
+              <div class="past-fixtures-container" id="past-fixtures-container-away">
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+                <div class="past-fixture">
+                  <span>X</span><br />
+                  <p>Team - Team</p>
+                  <p>1 - 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <canvas id="goals-line-chart-away"></canvas>
+            </div>
+            <div class="item3">
+              <canvas id="goals-bar-chart-away"></canvas>
+            </div>
+            <div class="item4">
+              <p class="pie-chart-description">Total</p>
+              <canvas id="goals-pie-chart-away"></canvas>
+
+              <p class="pie-chart-description">Home</p>
+              <canvas id="goals-pie-chart-away-2"></canvas>
+             
+              <p class="pie-chart-description">Away</p>
+              <canvas id="goals-pie-chart-away-3"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

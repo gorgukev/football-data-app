@@ -1,0 +1,69 @@
+/* General container for dropdowns to maintain positioning */
+.dropdown-container {
+  position: absolute;
+  top: 20px;
+  margin: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+/* Style for the select element */
+select {
+  cursor: pointer;
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid white; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #000; /* Background color */
+  color: #fff; /* Text color */
+  appearance: none; /* Remove default arrow */
+}
+
+/* Style for the arrow icon */
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: calc(50% - 0.5em); /* Center vertically */
+  right: 10px; /* Adjust distance from the right */
+  pointer-events: none; /* Prevent interaction with the icon */
+  color: #fff; /* Arrow color */
+}
+
+/* Style for dropdown options */
+select option {
+  background-color: #000; /* Background color */
+  color: #fff; /* Text color */
+}
+
+/* Style for hover effect */
+select:hover {
+  border-color: #fff; /* Border color on hover */
+}
+
+#team-dropdown {
+  transition: 1s;
+}
+
+/* Style for the button element */
+.btn-submit {
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: solid 1px white; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.btn-submit:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #000; /* Text color on hover */
+}
